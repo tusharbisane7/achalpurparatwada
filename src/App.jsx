@@ -6,7 +6,7 @@ import Header from './components/Header/Header.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import MaintenancePopup from './components/MaintenancePopup/MaintenancePopup.jsx';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop.jsx';
-
+import PageLoader from './components/PageLoader/PageLoader.jsx';
 import Home from './pages/Home/Home.jsx';
 import Government from './pages/Government/Government.jsx';
 import Healthcare from './pages/Healthcare/Healthcare.jsx';
@@ -23,6 +23,8 @@ import './App.scss';
 export default function App() {
   return (
     <div className="app-shell">
+      <PageLoader />
+
       <ScrollToTop />
 
       <Header />
